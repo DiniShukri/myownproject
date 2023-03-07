@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 
 df = pd.read_csv('Advertising.csv')
+df2=df.drop('',axis=1)
 
 st.header("My first Project")
 
