@@ -23,12 +23,12 @@ This app predicts the **Iris flower** type!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    adsTV = st.sidebar.slider('TV', 0, 100, 50)
-    adsRadio = st.sidebar.slider('Radio', 2.0, 4.4, 3.4)
-    adsNews = st.sidebar.slider('Newspaper', 1.0, 6.9, 1.3)
+    adsTV = st.sidebar.slider('TV', 0.0, 100.0, 50.0)
+    adsRadio = st.sidebar.slider('Radio', 0.0, 100.0, 50.0)
+    adsNews = st.sidebar.slider('Newspaper', 0.0, 100.0, 50.0)
     data = {'TV': adsTV,
             'Radio': adsRadio,
-            'Newspaper': adsNew}
+            'Newspaper': adsNews}
     features = pd.DataFrame(data, index=[0])
     return features
 
